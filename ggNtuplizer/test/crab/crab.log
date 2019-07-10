@@ -1,0 +1,430 @@
+DEBUG 2019-07-03 05:23:29,034: 	 Executing command: 'submit'
+DEBUG 2019-07-03 05:23:29,035: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-03 05:23:29,045: 	 Checking credentials
+DEBUG 2019-07-03 05:23:29,046: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-03 05:23:29,046: 	 Getting proxy life time left
+DEBUG 2019-07-03 05:23:29,150: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 81423
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-03 05:23:29,254: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 81423
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-03 05:23:29,254: 	 Proxy valid for 22:37:03 hours
+ERROR 2019-07-03 05:23:29,255: 	 CRAB configuration file crabConfig.py not found.
+ERROR 2019-07-03 05:23:29,255: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 49, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crabConfig.py not found.
+DEBUG 2019-07-04 04:44:02,846: 	 Executing command: 'status'
+DEBUG 2019-07-04 04:44:02,847: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+ERROR 2019-07-04 04:44:02,849: 	 Cannot find .requestcache file in CRAB project directory /uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_ParkingBPH5_Run2018D-20Mar2019-v1_AOD_10Apr19_DielectronSpectrum_ptMode
+ERROR 2019-07-04 04:44:02,849: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 590, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 452, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_ParkingBPH5_Run2018D-20Mar2019-v1_AOD_10Apr19_DielectronSpectrum_ptMode
+DEBUG 2019-07-04 04:50:26,170: 	 Executing command: 'submit'
+DEBUG 2019-07-04 04:50:26,177: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-04 04:50:26,183: 	 Checking credentials
+DEBUG 2019-07-04 04:50:26,184: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-04 04:50:26,184: 	 Getting proxy life time left
+DEBUG 2019-07-04 04:50:26,286: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 85629
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-04 04:50:26,389: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 85629
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-04 04:50:26,389: 	 Proxy valid for 23:47:09 hours
+DEBUG 2019-07-04 04:50:26,390: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-07-06 08:08:19,263: 	 Executing command: 'submit'
+DEBUG 2019-07-06 08:08:19,274: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-06 08:08:19,289: 	 Checking credentials
+DEBUG 2019-07-06 08:08:19,290: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-06 08:08:19,290: 	 Getting proxy life time left
+DEBUG 2019-07-06 08:08:19,394: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 46097
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-06 08:08:19,498: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 46097
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-06 08:08:19,498: 	 Proxy valid for 12:48:17 hours
+DEBUG 2019-07-06 08:08:19,499: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-07-06 08:08:34,942: 	 Executing command: 'submit'
+DEBUG 2019-07-06 08:08:34,952: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-06 08:08:34,961: 	 Checking credentials
+DEBUG 2019-07-06 08:08:34,961: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-06 08:08:34,961: 	 Getting proxy life time left
+DEBUG 2019-07-06 08:08:35,065: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 46081
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-06 08:08:35,169: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 46081
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-06 08:08:35,169: 	 Proxy valid for 12:48:01 hours
+DEBUG 2019-07-06 08:08:35,170: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-07-08 04:00:54,012: 	 Executing command: 'submit'
+DEBUG 2019-07-08 04:00:54,018: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-08 04:00:54,023: 	 Checking credentials
+DEBUG 2019-07-08 04:00:54,024: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-08 04:00:54,024: 	 Getting proxy life time left
+DEBUG 2019-07-08 04:00:54,127: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 86368
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-08 04:00:54,230: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 86368
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-08 04:00:54,230: 	 Proxy valid for 23:59:28 hours
+DEBUG 2019-07-08 04:00:54,231: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-07-08 04:00:58,514: 	 Executing command: 'submit'
+DEBUG 2019-07-08 04:00:58,519: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-08 04:00:58,524: 	 Checking credentials
+DEBUG 2019-07-08 04:00:58,524: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-08 04:00:58,524: 	 Getting proxy life time left
+DEBUG 2019-07-08 04:00:58,627: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 86364
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-08 04:00:58,729: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 86364
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-08 04:00:58,730: 	 Proxy valid for 23:59:24 hours
+DEBUG 2019-07-08 04:00:58,730: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-07-08 04:02:31,485: 	 Executing command: 'submit'
+DEBUG 2019-07-08 04:02:31,494: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-08 04:02:31,501: 	 Checking credentials
+DEBUG 2019-07-08 04:02:31,501: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-08 04:02:31,501: 	 Getting proxy life time left
+DEBUG 2019-07-08 04:02:31,604: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 86271
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-08 04:02:31,706: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 86271
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-08 04:02:31,707: 	 Proxy valid for 23:57:51 hours
+DEBUG 2019-07-08 04:02:31,707: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-07-09 04:22:53,594: 	 Executing command: 'submit'
+DEBUG 2019-07-09 04:22:53,594: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-09 04:22:53,609: 	 Checking credentials
+DEBUG 2019-07-09 04:22:53,610: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-09 04:22:53,610: 	 Getting proxy life time left
+DEBUG 2019-07-09 04:22:53,714: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 40320
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:22:53,818: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 40320
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:22:53,818: 	 Proxy valid for 11:12:00 hours
+INFO 2019-07-09 04:22:53,819: 	 Will use CRAB configuration file crabConfig_ZtoEE.py
+DEBUG 2019-07-09 04:22:53,819: 	 Loading CRAB configuration file.
+ERROR 2019-07-09 04:22:53,887: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-07-09 04:22:53,887: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 87, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-07-09 04:23:43,066: 	 Executing command: 'submit'
+DEBUG 2019-07-09 04:23:43,066: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-09 04:23:43,074: 	 Checking credentials
+DEBUG 2019-07-09 04:23:43,074: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-09 04:23:43,074: 	 Getting proxy life time left
+DEBUG 2019-07-09 04:23:43,178: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 40270
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:23:43,282: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 40270
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:23:43,283: 	 Proxy valid for 11:11:10 hours
+INFO 2019-07-09 04:23:43,283: 	 Will use CRAB configuration file crabConfig_ZtoEE.py
+DEBUG 2019-07-09 04:23:43,283: 	 Loading CRAB configuration file.
+ERROR 2019-07-09 04:23:43,285: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-07-09 04:23:43,286: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 87, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-07-09 04:23:58,722: 	 Executing command: 'submit'
+DEBUG 2019-07-09 04:23:58,722: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-09 04:23:58,732: 	 Checking credentials
+DEBUG 2019-07-09 04:23:58,733: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-09 04:23:58,733: 	 Getting proxy life time left
+DEBUG 2019-07-09 04:23:58,837: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 40255
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:23:58,941: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 40255
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:23:58,941: 	 Proxy valid for 11:10:55 hours
+INFO 2019-07-09 04:23:58,941: 	 Will use CRAB configuration file crabConfig_ZtoEE.py
+DEBUG 2019-07-09 04:23:58,941: 	 Loading CRAB configuration file.
+ERROR 2019-07-09 04:23:58,944: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-07-09 04:23:58,945: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 87, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-07-09 04:24:37,449: 	 Executing command: 'submit'
+DEBUG 2019-07-09 04:24:37,449: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-09 04:24:37,458: 	 Checking credentials
+DEBUG 2019-07-09 04:24:37,458: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-09 04:24:37,459: 	 Getting proxy life time left
+DEBUG 2019-07-09 04:24:37,562: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 40216
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:24:37,667: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 40216
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:24:37,667: 	 Proxy valid for 11:10:16 hours
+INFO 2019-07-09 04:24:37,667: 	 Will use CRAB configuration file crabConfig_ZtoEE.py
+DEBUG 2019-07-09 04:24:37,667: 	 Loading CRAB configuration file.
+ERROR 2019-07-09 04:24:37,677: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-07-09 04:24:37,677: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 87, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-07-09 04:25:01,334: 	 Executing command: 'submit'
+DEBUG 2019-07-09 04:25:01,334: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-09 04:25:01,344: 	 Checking credentials
+DEBUG 2019-07-09 04:25:01,344: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-09 04:25:01,344: 	 Getting proxy life time left
+DEBUG 2019-07-09 04:25:01,448: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 40192
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:25:01,552: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 40192
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-09 04:25:01,553: 	 Proxy valid for 11:09:52 hours
+INFO 2019-07-09 04:25:01,553: 	 Will use CRAB configuration file crabConfig_ZtoEE.py
+DEBUG 2019-07-09 04:25:01,553: 	 Loading CRAB configuration file.
+ERROR 2019-07-09 04:25:01,556: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2019-07-09 04:25:01,557: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 311, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 87, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crabConfig_ZtoEE.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-07-10 06:01:09,806: 	 Executing command: 'status'
+DEBUG 2019-07-10 06:01:09,806: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+ERROR 2019-07-10 06:01:09,809: 	 Error: /uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_ZToEE_NNPDF31_13TeV-powheg_M_50_120_AOD_8Jul19_DielectronSpectrum is not a valid CRAB project directory.
+ERROR 2019-07-10 06:01:09,809: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: /uscms_data/d3/tkwon/MYWORKINGAREA/CMSSW_10_2_14/src/ggAnalysis/ggNtuplizer/test/crab/crab_projects_ntuples/crab_ZToEE_NNPDF31_13TeV-powheg_M_50_120_AOD_8Jul19_DielectronSpectrum is not a valid CRAB project directory.
+DEBUG 2019-07-10 07:06:08,818: 	 Executing command: 'submit'
+DEBUG 2019-07-10 07:06:08,829: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-10 07:06:08,841: 	 Checking credentials
+DEBUG 2019-07-10 07:06:08,841: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-10 07:06:08,841: 	 Getting proxy life time left
+DEBUG 2019-07-10 07:06:08,945: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 79348
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 07:06:09,049: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 79347
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 07:06:09,050: 	 Proxy lifetime 79348 secs is different from voms extension lifetime 79347 secs for proxy: /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-10 07:06:09,050: 	 Proxy valid for 22:02:27 hours
+DEBUG 2019-07-10 07:06:09,051: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).

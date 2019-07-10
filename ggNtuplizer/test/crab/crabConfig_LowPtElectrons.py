@@ -47,9 +47,9 @@ if __name__ == '__main__':
 
     config.Data.unitsPerJob    = 10
     #config.Data.inputDataset   = '/ParkingBPH1/Run2018A-22Mar2019-v1/AOD'
-    config.Data.inputDataset   = '/ParkingBPH5/Run2018D-20Mar2019-v1/AOD'
+    config.Data.inputDataset   = '/ParkingBPH1/Run2018B-PromptReco-v1/AOD'
 
-    config.Data.outLFNDirBase  = '/store/user/klau/DielectronSpectrum'
+    #config.Data.outLFNDirBase  = '/store/user/klau/DielectronSpectrum'
     p = Process(target=submit, args=(config,))
     p.start()
     p.join()

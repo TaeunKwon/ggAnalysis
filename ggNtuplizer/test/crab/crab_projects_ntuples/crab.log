@@ -1,0 +1,155 @@
+DEBUG 2019-07-06 07:50:30,565: 	 Executing command: 'status'
+DEBUG 2019-07-06 07:50:30,565: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-09 07:42:14,448: 	 Executing command: 'status'
+DEBUG 2019-07-09 07:42:14,449: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+ERROR 2019-07-09 07:42:14,450: 	 Error: crab_ParkingBPH1_Run2018B-PromptReco-v1_AOD_6Jul19_DielectronSpectrum/ is not a valid CRAB project directory.
+ERROR 2019-07-09 07:42:14,450: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_ParkingBPH1_Run2018B-PromptReco-v1_AOD_6Jul19_DielectronSpectrum/ is not a valid CRAB project directory.
+DEBUG 2019-07-09 07:42:28,940: 	 Executing command: 'status'
+DEBUG 2019-07-09 07:42:28,940: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+ERROR 2019-07-09 07:42:28,942: 	 Error: crab_ParkingBPH1_Run2018 is not a valid CRAB project directory.
+ERROR 2019-07-09 07:42:28,942: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 268, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 586, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_ParkingBPH1_Run2018 is not a valid CRAB project directory.
+DEBUG 2019-07-10 05:10:24,635: 	 Executing command: 'checkwrite'
+DEBUG 2019-07-10 05:10:24,635: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+DEBUG 2019-07-10 05:10:24,643: 	 Checking credentials
+DEBUG 2019-07-10 05:10:24,644: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-10 05:10:24,644: 	 Getting proxy life time left
+DEBUG 2019-07-10 05:10:24,748: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 86292
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:10:24,851: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 86292
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:10:24,852: 	 Proxy valid for 23:58:12 hours
+DEBUG 2019-07-10 05:10:24,961: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ktaeun/CN=825103/CN=Taeun Kwon
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:10:24,962: 	 Checking credentials
+DEBUG 2019-07-10 05:10:24,962: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-10 05:10:24,962: 	 Getting proxy life time left
+DEBUG 2019-07-10 05:10:25,066: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 86291
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:10:25,171: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 86291
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:10:25,171: 	 Proxy valid for 23:58:11 hours
+DEBUG 2019-07-10 05:10:25,275: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/tkwon/x509up_u55287 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+ERROR 2019-07-10 05:10:25,276: 	 Error: Please specify the site where to check the write permissions. Use the --site option.
+ERROR 2019-07-10 05:10:25,276: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/checkwrite.py", line 22, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 353, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/checkwrite.py", line 262, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please specify the site where to check the write permissions. Use the --site option.
+DEBUG 2019-07-10 05:13:11,482: 	 Executing command: 'checkwrite'
+DEBUG 2019-07-10 05:13:11,482: 	 Found CRAB cache file /uscms/home/tkwon/.crab3
+WARNING 2019-07-10 05:13:11,484: 	 Warning: 'crab checkwrite' command takes no arguments, 1 given. Ignoring arguments ['crab_ParkingBPH1_Run2018A-05May2019-v1_AOD_6Jul19_DielectronSpectrum/'].
+DEBUG 2019-07-10 05:13:11,496: 	 Checking credentials
+DEBUG 2019-07-10 05:13:11,496: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-10 05:13:11,496: 	 Getting proxy life time left
+DEBUG 2019-07-10 05:13:11,600: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 86125
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:13:11,704: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 86125
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:13:11,704: 	 Proxy valid for 23:55:25 hours
+DEBUG 2019-07-10 05:13:11,815: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ktaeun/CN=825103/CN=Taeun Kwon
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:13:11,815: 	 Checking credentials
+DEBUG 2019-07-10 05:13:11,815: 	 Found proxy file /uscms/home/tkwon/x509up_u55287
+DEBUG 2019-07-10 05:13:11,815: 	 Getting proxy life time left
+DEBUG 2019-07-10 05:13:11,919: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -timeleft
+ output : 86125
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:13:12,023: 	 Executing : 
+ command : voms-proxy-info -file /uscms/home/tkwon/x509up_u55287 -actimeleft
+ output : 86125
+
+ error: 
+ retcode : 0
+DEBUG 2019-07-10 05:13:12,024: 	 Proxy valid for 23:55:25 hours
+DEBUG 2019-07-10 05:13:12,127: 	 Executing : 
+ command : env X509_USER_PROXY=/uscms/home/tkwon/x509up_u55287 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+ERROR 2019-07-10 05:13:12,128: 	 Error: Please specify the site where to check the write permissions. Use the --site option.
+ERROR 2019-07-10 05:13:12,128: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 161, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/checkwrite.py", line 22, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 353, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1904/lib/python2.7/site-packages/CRABClient/Commands/checkwrite.py", line 262, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please specify the site where to check the write permissions. Use the --site option.
